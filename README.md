@@ -14,15 +14,13 @@ A game for 32-bit ARM-based [**Acorn Archimedes** computers](https://en.wikipedi
 
 Over 25 years since release, the commercial life of Drifter has long-since passed, along with the computer platform on which it was designed to run. This repo is an attempt to preserve a small part of the original Acorn software catalogue and make the game available and playable on more hardware.
 
-The [Drifter version available here](https://github.com/AcornDrifter/Drifter/blob/main/Drifter%20(32-bit%20compatible).zip) has been updated for compatibility with modern 32-bit RISC OS beyond version 3. With thanks to Jon Abbott at JASPP for the generous technical help.
-
-Transfer the [Drifter (32-bit compatible).zip](https://github.com/AcornDrifter/Drifter/blob/main/Drifter%20(32-bit%20compatible).zip) to the emulator or real hardware first, and then unzip the archive within RISC OS itself to preserve the file types within the **`!Drifter32`** folder.
+The [Drifter version available here](https://github.com/AcornDrifter/Drifter/blob/main/Drifter%20(32-bit%20compatible).zip) has been updated for compatibility with modern 32-bit RISC OS beyond version 3. With thanks to Jon Abbott at JASPP for the generous technical help. Transfer the [Drifter (32-bit compatible).zip](https://github.com/AcornDrifter/Drifter/blob/main/Drifter%20(32-bit%20compatible).zip) to the emulator or real hardware first, and then unzip the archive within RISC OS itself to preserve the file types within the **`!Drifter32`** folder.
 
 ## Source code
 
-The source code is available in a [readable form here on GitHub](Source/!RunImage.txt). The BBC BASIC (tokenized) form of the same file is also provided. 
+The source code is available in a [readable form here on GitHub](Source/!RunImage.txt). The BBC BASIC (tokenized) form of the same file is also provided. If you're interested enough to tinker with the source code, shift-double-click on **`!Drifter32`**, and shift-double-click on **`!RunImage`** to view and edit the source code. [StrongEd](http://stronged.iconbar.com) is highly recommended.
 
-If you're interested enough to tinker with the source code, shift-double-click on **`!Drifter32`**, and shift-double-click on **`!RunImage`** to view and edit the source code. [StrongEd](http://stronged.iconbar.com) is highly recommended.
+Feel free to tinker with, or improve the game in any way and share any results in this repo, via branches or pull requests.
 
 ## Background
 
@@ -36,9 +34,9 @@ It's clear that figuring-out software-3D, rasterization, texture-mapping and eve
 
 The Acorn Archimedes has a unique place in computing history. The mobile-computing-age-defining [ARM chip and architecture](https://en.wikipedia.org/wiki/ARM_architecture_family) was designed and developed for the computer.
 
-As the original author of the Drifter, I didn't particularly look back on the game with any pride or take care to archive development material, or keep much of anything associated with the game. More than 25 years after Drifter's release all the details around how it was built are fading. It's next-to-impossible to find a copy online or run the game under emulation, let alone look back through any source code.
+As the original author of the Drifter, I didn't particularly look back on the game with any pride or take care to archive development material, or keep much of anything associated with the game for very long. More than 25 years after Drifter's release all the details around how it was built are fading. It's next-to-impossible to find a copy online or run the game under emulation, let alone look back through any source code.
 
-I was pleased to discover Jon Abbott of [JASPP](https://forums.jaspp.org.uk/forum/index.php) (Archimedes Software Preservation Project) had already put in some effort to archive Drifter. Jon also fixed it for use on versions of RISC OS beyond its original design, making it run on [RISC OS OPEN on Raspberry Pi](https://www.riscosopen.org/content/downloads/raspberry-pi).
+I was pleased to discover some efforts had been made by Jon Abbott of the [JASPP](https://forums.jaspp.org.uk/forum/index.php) (Archimedes Software Preservation Project) to archive and update Drifter. Jon fixed it for use on versions of RISC OS beyond its original design, making it run on [RISC OS OPEN on Raspberry Pi](https://www.riscosopen.org/content/downloads/raspberry-pi).
 
 ## History
 
