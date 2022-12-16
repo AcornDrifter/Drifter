@@ -20,7 +20,7 @@ The [Drifter version available here](https://github.com/AcornDrifter/Drifter/blo
 
 The source code is available in a [readable form here on GitHub](Source/!RunImage.txt). The BBC BASIC (tokenized) form of the same file is also provided. If you're interested enough to tinker with the source code, shift-double-click on **`!Drifter32`**, and shift-double-click on **`!RunImage`** to view and edit the source code. [StrongEd](http://stronged.iconbar.com) is highly recommended.
 
-Feel free to tinker with, or improve the game in any way and share any results in this repo, via branches or pull requests.
+Feel free to tinker with or improve the game in any way and share any results in forks or pull requests.
 
 ## Background
 
@@ -34,15 +34,15 @@ It's clear that figuring-out software-3D, rasterization, texture-mapping and eve
 
 The Acorn Archimedes has a unique place in computing history. The mobile-computing-age-defining [ARM chip and architecture](https://en.wikipedia.org/wiki/ARM_architecture_family) was designed and developed for the computer.
 
-As the original author of the Drifter, I didn't particularly look back on the game with any pride or take care to archive development material, or keep much of anything associated with the game for very long. More than 25 years after Drifter's release all the details around how it was built are fading. It's next-to-impossible to find a copy online or run the game under emulation, let alone look back through any source code.
+As the original author of the Drifter, I didn't particularly look back on the game with any pride or take care to archive development material, or keep much of anything associated with the game for very long. More than 25 years after Drifter's release all the details around how it was built are fading. It's next-to-impossible to find a copy online, run the game in an emulator or look back through any source code.
 
-I was pleased to discover some efforts had been made by Jon Abbott of the [JASPP](https://forums.jaspp.org.uk/forum/index.php) (Archimedes Software Preservation Project) to archive and update Drifter. Jon fixed it for use on versions of RISC OS beyond its original design, making it run on [RISC OS OPEN on Raspberry Pi](https://www.riscosopen.org/content/downloads/raspberry-pi).
+I was pleased to discover Jon Abbott of the [JASPP](https://forums.jaspp.org.uk/forum/index.php) (Archimedes Software Preservation Project) had archived and updated Drifter. Jon fixed it for use on versions of RISC OS beyond its original design, making it run on [RISC OS OPEN on Raspberry Pi](https://www.riscosopen.org/content/downloads/raspberry-pi).
 
 ## History
 
-The introduction of [Virtua Racing](https://en.wikipedia.org/wiki/Virtua_Racing) to arcades in 1992 and Star Fox for SNES in 1993 triggered some obsessive and haphazard experiments with 3D projection and rotation techniques using BBC BASIC and later assembler.
+The introduction of [Virtua Racing](https://en.wikipedia.org/wiki/Virtua_Racing) to arcades in 1992 and Star Fox for SNES in 1993 triggered some obsessive experiments with 3D projection and rotation techniques using BBC BASIC and later assembler.
 
-Earlier incarnations of what ended up being Drifter were inspired by [F-Zero](https://en.wikipedia.org/wiki/F-Zero_(video_game)) and other 16-bit Super Nintendo games featuring the so-called [Mode 7 'texture-mapping' floor plane effect](https://en.wikipedia.org/wiki/Mode_7). 
+Earlier incarnations of Drifter were inspired by [F-Zero](https://en.wikipedia.org/wiki/F-Zero_(video_game)) and other 16-bit Super Nintendo games featuring the so-called [Mode 7 'texture-mapping' floor plane effect](https://en.wikipedia.org/wiki/Mode_7). I assumed that it would be a performance advantage to draw only the sections of floor-plane needed for the track and leave some sections untouched. This resulted in Drifter's grid-based track appearance.
 
 ## Limitations
 
@@ -54,7 +54,11 @@ While ARM-assembler is beautifully designed and elegant work with, the lack of a
 
 ## Context
 
-Texture-mapping and 3D on home computers in '94-'95 seemed quite boundary-pushing and remarkable. It became much more mainstream after the Sony PlayStation and Sega Saturn arrived in the UK late '95. What seemed fresh and boundary-pushing early in Drifter's development, soon looked dated and compared rather badly in the year after Drifter's release.
+Texture-mapping and 3D graphics on home computers in '94-'95 seemed quite boundary-pushing and impressive. It became much more mainstream after the Sony PlayStation and Sega Saturn arrived in the UK late '95. What seemed fresh and boundary-pushing early in Drifter's development soon looked dated and compared quite badly by Drifter's release.
+
+Development started with only a small range of target hardware in view, from my 12MHz A3010 through to the 33Mhz A5000 and the very newly released (at the time) Risc PC maxing out the range at 40MHz. It wasn't really possible for a teenager to afford or even get access to any other hardware. As Drifter was being completed the 200+ MHz StrongARM for Risc PC was launched. 
+
+Drifter was not designed with frame-rate compensation and so the newly enlarged spread of hardware performance revealed my lack of knowledge and the game's technical shortcomings. With experience, it's obvious that support for resolution independence and frame-rate independence would have allowed the game to scale gracefully and take more advantage of faster hardware as it appeared.
 
 ## Technical demos
 
